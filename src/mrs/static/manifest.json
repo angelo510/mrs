@@ -5,8 +5,27 @@
   "start_url": "/?from=webapp",
   "theme_color": "#EF786F",
   "background_color": "#C3D2D9",
-  "display": "fullscreen",
-  "orientation": "portrait-primary",
+  "display": "minimal-ui",
+  "orientation": "any",
+  "content_scripts": [
+    "matches": ["https://www.mrs.beta.gouv.fr/*"],
+    "js": [
+      "/static/material/js/jquery.js",
+      "/static/material/js/jquery.datetimepicker.full.js",
+      "/static/material/js/jquery.formset.js",
+      "/static/material/js/materialize.js",
+      "/static/js/vendor/jquery.ui.widget.js",
+      "/static/demo/tmpl.min.js",
+      "/static/demo/load-image.min.js",
+      "/static/demo/canvas-to-blob.min.js",
+      "https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js",
+      "/static/js/jquery.iframe-transport.js",
+      "/static/js/jquery.fileupload.js",
+      "/static/js/jquery.fileupload-process.js",
+      "/static/js/jquery.fileupload-image.js",
+      "/static/js/jquery.fileupload-validate.js",
+      "/static/webpack_bundles/base-1b8c270caf9b0bf5fa22.js"
+  ],
   "icons": [
     {
       "src": "/static/img/logos/launcher-icon-1x.png",
